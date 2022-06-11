@@ -26,10 +26,12 @@ The designs were made by Margaret W.N, be sure to connect on her socials and buy
 Contribution to this project will hopefully be very inclusive.
 
 Step 1: Pick an Issue 😎
+
 Step 2: Create a branch from the `develop` branch and make your changes 🌿
+
 Step 3: Create a PR to the `develop` branch 😎
 
-If you need help with any task, be sure to ping any of the maintainers for help :-)
+If you need help with any task, be sure to ping any of the maintainers for help. This is a project for everyone :-)
 
 ### Getting Started
 
