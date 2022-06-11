@@ -1,23 +1,34 @@
-# Next.js + Tailwind CSS Example
+# She-codes Africa Nairobi Chapter
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+Hello Stranger, this is the official open source website for She-codes-Africa Nairobi Chapter, in collaboration with **Open-source Community Africa Nairobi Chapter**
 
-## Deploy your own
+You are welcome to make a Pull Request anytime to contribute to the website ⚡
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+This website will use this Tech-Stack:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+- [React.js](https://beta.reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [TailwindCss](https://tailwindcss.com/)
 
-## How to use
+If any other tool is to be introduced, we will have a discussion and agree on it. Feel free to join the discussion [here]()
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+## Design
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-# or
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
+The design for the website looks something like this:
+![Image](public%5Cshe-codes.png)
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+The actual Figma Design file can be found [here](https://www.figma.com/file/PdCJdQHmyhjKSSy6dgHMut/She-Codes-Africa-Nairobi?node-id=0%3A1)
+
+The designs were made by Margaret W.N, be sure to connect on her socials and buy her a coffee [GitHub](https://github.com/M-Tee/), [LinkedIn](https://www.linkedin.com/in/margaret-wambui-481042187/) or [Twitter](https://twitter.com/margytom_)
+
+### Contribution Flow
+
+Contribution to this project will hopefully be very inclusive.
+
+Step 1: Pick an Issue 😎
+Step 2: Create a branch from the `develop` branch and make your changes 🌿
+Step 3: Create a PR to the `develop` branch 😎
+
+If you need help with any task, be sure to ping any of the maintainers for help :-)
+
+So Don't be shy, GET INVOLVED 🥳
