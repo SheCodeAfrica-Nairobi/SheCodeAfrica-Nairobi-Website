@@ -25,7 +25,6 @@ const Home: NextPage = () => {
           rel="noopener noreferrer"
         >
           Let build with 💖{' '}
-
         </a>
       </footer>
     </div>
