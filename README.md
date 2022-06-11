@@ -31,4 +31,20 @@ Step 3: Create a PR to the `develop` branch 😎
 
 If you need help with any task, be sure to ping any of the maintainers for help :-)
 
+### Getting Started
+
+You can get started by forking this repo to your GitHub account.
+
+Next step, Clone your repo and run:
+
+```js
+npm install
+
+// then run the app
+
+npm run dev
+```
+
+Tada. It Twerks now!
+
 So Don't be shy, GET INVOLVED 🥳
