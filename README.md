@@ -15,7 +15,7 @@ If any other tool is to be introduced, we will have a discussion and agree on it
 ## Design
 
 The design for the website looks something like this:
-![Image](public%5Cshe-codes.png)
+![Image](she-codes.png)
 
 The actual Figma Design file can be found [here](https://www.figma.com/file/PdCJdQHmyhjKSSy6dgHMut/She-Codes-Africa-Nairobi?node-id=0%3A1)
 
