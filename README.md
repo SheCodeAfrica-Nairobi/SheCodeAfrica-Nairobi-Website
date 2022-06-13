@@ -9,9 +9,13 @@ This website will use this Tech-Stack:
 - [React.js](https://beta.reactjs.org/)
 - [Next.js](https://nextjs.org/)
 - [TailwindCss](https://tailwindcss.com/)
-- [Typescript](https://www.typescriptlang.org/) Ps - If you don't know Typescript, don't worry, this might be your chance to get your hands dirty and learn with the community 🤝🏿
+- [Typescript](https://www.typescriptlang.org/)
+
+Ps - If you don't know Typescript, don't worry, this might be your chance to get your hands dirty and learn with the community 🤝🏿
 
 If any other tool is to be introduced, we will have a discussion and agree on it. Feel free to join the discussion [here]()
+
+You can join our Telegram channel [here](https://t.me/oscanairobi)
 
 ## Design
 
