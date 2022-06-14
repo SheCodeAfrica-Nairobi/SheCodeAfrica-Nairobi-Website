@@ -9,6 +9,10 @@ module.exports = {
         primary: '#B70569',
         darkAccent: '#210D15'
       },
+      fontFamily: {
+        header: '"DM Sans"',
+        sans: 'Poppins'
+      }
     },
   },
   plugins: [],
