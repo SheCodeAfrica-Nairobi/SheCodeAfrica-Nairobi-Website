@@ -18,7 +18,7 @@ function Banner({ className }: PropsWithClassName) {
     <div className={`flex w-full ${className}`}>
       <div className="basis-0 grow">
         <div className="mb-2.5 md:-mr-48">
-          <span className="font-header text-primary text-3xl md:text-7xl md:leading-[100px] xl:text-8xl xl:leading-[125px]">
+          <span className="font-header text-primary text-3xl md:text-6xl md:leading-[5rem] lg:text-7xl lg:leading-[6rem] xl:text-8xl xl:leading-[8rem]">
             Learn. Grow. Connect
           </span>
         </div>

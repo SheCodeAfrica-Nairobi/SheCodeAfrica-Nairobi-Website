@@ -19,7 +19,7 @@ const Home: NextPage = () => {
               rel="stylesheet" />
       </Head>
 
-      <main className="w-full px-4 md:px-20">
+      <main className="w-full px-4 md:px-8 lg:px-20">
         <Banner />
       </main>
     </div>
