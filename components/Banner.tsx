@@ -1,4 +1,5 @@
 import CtaButton from "./CtaButton";
+import pic from "/images/banner.png";
 
 type PropsWithClassName<T = {}> = { className?: string } & T
 
@@ -33,7 +34,7 @@ function Banner({ className }: PropsWithClassName) {
       <div className="hidden md:grid w-3/5 grid grid-cols-[repeat(15,1fr)] grid-rows-[repeat(5,60px)] lg:grid-rows-5">
         <BannerImage
           className="col-start-5 col-span-6 row-start-1 row-span-3 z-10"
-          src="https://picsum.photos/600?random=1"
+          src="/images/banner.png"
           alt=""
         />
         <BannerImage
