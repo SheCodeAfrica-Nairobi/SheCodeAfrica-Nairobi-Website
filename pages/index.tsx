@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         <link rel="manifest" href="/favicon/site.webmanifest" />
       </Head>
 
-      <main className="w-full px-4 md:px-8 lg:px-20">
+      <main>
         <Nav />
         <Banner />
       </main>
