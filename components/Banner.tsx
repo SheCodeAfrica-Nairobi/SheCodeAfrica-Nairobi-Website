@@ -30,9 +30,9 @@ function Banner({ className }: PropsWithClassName) {
         <CtaButton>Be a Member</CtaButton>
       </div>
 
-      <div className="hidden md:grid w-3/5 grid grid-cols-[repeat(15,1fr)] grid-rows-[repeat(5,60px)] lg:grid-rows-5">
+      <div className="hidden md:grid w-3/5 grid grid-cols-[repeat(5,1fr)] grid-rows-[repeat(9,50px)] lg:grid-rows-10">
         <BannerImage
-          className="col-start-5 col-span-9 row-start-2 row-span-3 z-10"
+          className="col-start-2 col-span-4 row-start-2 row-span-7 z-10"
           src="/images/banner.png"
           alt=""
         />
