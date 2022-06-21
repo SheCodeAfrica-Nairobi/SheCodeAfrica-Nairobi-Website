@@ -1,5 +1,4 @@
 import CtaButton from "./CtaButton";
-import pic from "/images/banner.png";
 
 type PropsWithClassName<T = {}> = { className?: string } & T
 
