@@ -35,10 +35,10 @@ const LandingValueProposition = (props: Props) => {
   return (
     <div
       className={`${index == 0 && "text-primary"} ${
-        index == 1 && "text-green-500"
+        index == 1 && "text-greenAccent"
       } ${
-        index == 2 && "text-blue-500"
-      } font-header  text-6xl font-bold lg:text-8xl`}
+        index == 2 && "text-blueAccent"
+      } font-header  text-primary text-6xl font-bold lg:text-8xl`}
     >
       <span ref={elem} />
     </div>
