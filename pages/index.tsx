@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Banner from "../components/Banner";
+import Footer from '../components/Footer';
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
 
       <main className="w-full px-4 md:px-8 lg:px-20">
         <Banner />
+        <Footer />
       </main>
     </div>
   )
