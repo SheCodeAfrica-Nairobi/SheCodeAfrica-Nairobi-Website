@@ -33,17 +33,17 @@ function Banner({ className }: PropsWithClassName) {
       <div className="hidden md:grid w-3/5 grid grid-cols-[repeat(15,1fr)] grid-rows-[repeat(5,60px)] lg:grid-rows-5">
         <BannerImage
           className="col-start-5 col-span-6 row-start-1 row-span-3 z-10"
-          src="https://picsum.photos/600?random=1"
+          src="/images/image1.png"
           alt=""
         />
         <BannerImage
           className="col-start-1 col-span-6 row-start-3 row-span-3"
-          src="https://picsum.photos/600?random=2"
+          src="/images/image2.png"
           alt=""
         />
         <BannerImage
           className="col-start-10 col-span-6 row-start-3 row-span-3 z-20"
-          src="https://picsum.photos/600?random=3"
+          src="/images/image3.png"
           alt=""
         />
       </div>
