@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import LandingValueProposition from '../components/LandingValueProposition'
 import Banner from "../components/Banner";
 
 const Home: NextPage = () => {
@@ -15,9 +14,6 @@ const Home: NextPage = () => {
         <link rel="manifest" href="/favicon/site.webmanifest" />
       </Head>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-4xl font-bold text-primary">She-Codes-Nairobi</h1>
-        <LandingValueProposition elems={['Learn .','Grow .','Connect.']} typeSpeed={100} backSpeed={100} />
       <main className="w-full px-4 md:px-8 lg:px-20">
         <Banner />
       </main>
