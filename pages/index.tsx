@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { prependOnceListener } from 'process'
 import Banner from "../components/Banner";
 import Nav from '../components/Nav';
+import CallToAction from '../components/CallToAction'
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
       <main className="w-full px-4 md:px-8 lg:px-20">
         <Nav />
         <Banner />
+        <CallToAction />
       </main>
     </div>
   )
