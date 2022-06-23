@@ -31,9 +31,9 @@ function EventCard({ imageUrl, large = false, className = "" }: EventCardProps):
   );
 }
 
-export default function EventsPane() {
+export default function EventsPane({className = ''}) {
   return (
-    <div className="px-5 pb-10 md:px-8 lg:px-20">
+    <div className={`pb-10 ${className}`}>
       {/* Mobile & Tablet */}
       <div className="lg:hidden">
         <SectionHeader />
@@ -57,7 +57,7 @@ export default function EventsPane() {
         </div>
 
         <div className="w-1/2">
-          <EventCard imageUrl="/images/event-posters/sample-sca-event-poster-1.png" className="ml-auto" large />
+          <EventCard imageUrl="/images/event-posters/sample-sca-event-poster-1.png" className="xl:mx-auto" large />
         </div>
       </div>
     </div>

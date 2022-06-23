@@ -20,8 +20,10 @@ const Home: NextPage = () => {
 
       <main className="text-darkAccent">
         <Nav />
-        <Banner />
-        <EventsPane/>
+        <div className="px-5 md:px-8 lg:px-20">
+          <Banner />
+          <EventsPane/>
+        </div>  
       </main>
     </div>
   )

@@ -15,7 +15,7 @@ function BannerImage(
 
 function Banner({ className }: PropsWithClassName) {
   return (
-    <div className={`flex px-5 pt-28 pb-14 sm:px-20 sm:pb-24 ${className}`}>
+    <div className={`flex pt-28 pb-14 sm:pb-24 ${className}`}>
       <div className="basis-0 grow">
         <div className="mb-2.5 md:-mr-48">
           <span className="font-header text-primary text-3xl md:text-6xl md:leading-[5rem] lg:text-7xl lg:leading-[6rem] xl:text-8xl xl:leading-[8rem]">
