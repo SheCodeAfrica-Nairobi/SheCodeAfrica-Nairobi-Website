@@ -37,8 +37,8 @@ const Home: NextPage = () => {
       <main className="w-full px-4 md:px-8 lg:px-20 text-darkAccent">
         <Nav />
         <Banner />
-        <EventsPane />
         <CallToAction />
+        <EventsPane />
         <Footer />
       </main>
     </div >
