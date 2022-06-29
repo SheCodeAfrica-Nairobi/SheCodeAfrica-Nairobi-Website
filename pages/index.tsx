@@ -11,7 +11,7 @@ import type { NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className="min-h-screen flex-col items-center justify-center py-2">
       <Head>
         <title>She-Codes-Nairobi</title>
         <link
@@ -36,7 +36,6 @@ const Home: NextPage = () => {
 
       <main className="w-full px-4 md:px-8 lg:px-20 text-darkAccent">
         <Nav />
-
         <Banner />
         <EventsPane />
 
