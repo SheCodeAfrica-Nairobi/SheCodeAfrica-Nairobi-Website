@@ -8,8 +8,7 @@ import Footer from '../components/Footer';
 import Nav from '../components/Nav';
 import EventsPane from '../components/EventsPane'
 import type { NextPage } from "next";
-
-
+import CallToAction from '../components/CallToAction'
 
 const Home: NextPage = () => {
   return (
@@ -40,6 +39,7 @@ const Home: NextPage = () => {
         <Nav />
         <Banner />
         <EventsPane />
+        <CallToAction />
         <Footer />
       </main>
     </div >
