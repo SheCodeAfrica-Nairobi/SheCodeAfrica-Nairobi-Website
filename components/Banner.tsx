@@ -51,4 +51,4 @@ function Banner({ className }: PropsWithClassName) {
   )
 }
 
-export {Banner as default}
+export { Banner as default }
