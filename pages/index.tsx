@@ -1,13 +1,14 @@
-import React, { useState } from 'react'
-import Head from 'next/head'
-import Image from 'next/image'
-import { prependOnceListener } from 'process'
+import React, { useState } from "react";
+import Head from "next/head";
+import Image from "next/image";
+import { prependOnceListener } from "process";
 import Banner from "../components/Banner";
-import Footer from '../components/Footer';
-import Nav from '../components/Nav';
-import EventsPane from '../components/EventsPane'
+import Footer from "../components/Footer";
+import Nav from "../components/Nav";
+import EventsPane from "../components/EventsPane";
 import type { NextPage } from "next";
-import CallToAction from '../components/CallToAction'
+import CallToAction from "../components/CallToAction";
+import Layout from "../components/layout";
 
 const Home: NextPage = () => {
   return (
@@ -35,13 +36,13 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="w-full px-4 md:px-8 lg:px-20 text-darkAccent">
-        <Nav />
-        <Banner />
-        <EventsPane />
-        <CallToAction />
-        <Footer />
+        <Layout>
+          <Banner />
+          <EventsPane />
+          <CallToAction />
+        </Layout>
       </main>
-    </div >
+    </div>
   );
 };
 
