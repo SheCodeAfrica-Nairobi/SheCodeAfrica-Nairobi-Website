@@ -6,8 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@ionic/react": "^6.1.10",
-    "@ionic/react-router": "^6.1.10",
+    "@headlessui/react": "^1.6.5",
     "next": "latest",
     "react": "18.1.0",
     "react-dom": "18.1.0"
