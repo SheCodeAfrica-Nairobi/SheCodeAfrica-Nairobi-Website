@@ -4,9 +4,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { prependOnceListener } from 'process'
 import Banner from "../components/Banner";
+import Footer from '../components/Footer';
 import Nav from '../components/Nav';
 import EventsPane from '../components/EventsPane'
 import type { NextPage } from "next";
+
 
 
 const Home: NextPage = () => {
@@ -38,7 +40,7 @@ const Home: NextPage = () => {
         <Nav />
         <Banner />
         <EventsPane />
-
+        <Footer />
       </main>
     </div >
   );
