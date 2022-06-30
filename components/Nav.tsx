@@ -64,10 +64,9 @@ export default function Nav() {
                                 <div className="hidden sm:flex sm:items-center">
                                     <div className="">
                                         {navigation.slice(0, 4).map((link) => (
-                                            <ActiveLink activeClassName="active" href={link.href}>
+                                            <ActiveLink key={link.name} activeClassName="active" href={link.href}>
                                                 <a
-                                                    key={link.name}
-                                                    className="px-3 text-sm font-normal text-base"
+                                                    className="px-3 font-normal text-base"
                                                 >
                                                     {link.name}
                                                 </a>
