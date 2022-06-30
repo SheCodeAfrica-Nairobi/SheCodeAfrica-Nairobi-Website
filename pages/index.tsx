@@ -2,13 +2,8 @@ import React, { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { prependOnceListener } from "process";
-import Banner from "../components/Banner";
-import Footer from "../components/Footer";
-import Nav from "../components/Nav";
-import EventsPane from "../components/EventsPane";
 import type { NextPage } from "next";
-import CallToAction from "../components/CallToAction";
-import Layout from "../components/layout";
+import { Banner, CallToAction, EventsPane, Layout } from "../components";
 
 const Home: NextPage = () => {
   return (
