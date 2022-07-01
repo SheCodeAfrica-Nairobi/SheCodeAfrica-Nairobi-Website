@@ -1,4 +1,4 @@
-function SectionHeader() {
+export default function EventsPane() {
   return (
     <>
       <h2 className="font-header text-primary text-3xl sm:text-4xl">Events we have in store for you:</h2>

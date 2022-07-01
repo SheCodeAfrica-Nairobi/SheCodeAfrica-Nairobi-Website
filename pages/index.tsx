@@ -1,27 +1,20 @@
-import React, { useState } from 'react'
-import Banner from "../components/Banner";
-import Footer from '../components/Footer';
-import Nav from '../components/Nav';
-import EventsPane from '../components/EventsPane'
-import Head from 'next/head';
-import CallToAction from '../components/CallToAction'
+import React, { useState } from "react";
+import Head from "next/head";
+import Image from "next/image";
+import { prependOnceListener } from "process";
+import type { NextPage } from "next";
+import { Banner, CallToAction, EventsPane, Layout } from "../components";
 
 
-const Home = () => {
-	return (
-		<>
-			<Head>
-				<title>She-Codes-Nairobi</title>
-			</Head>
-			<main className="w-full px-4 md:px-8 lg:px-20 text-darkAccent">
-			<Nav />
-			<Banner />
-			<CallToAction />
-			<EventsPane />
-			<Footer />
-			</main>
-		</>
-	);
+      <main className="w-full px-4 md:px-8 lg:px-20 text-darkAccent">
+        <Layout>
+          <Banner />
+          <EventsPane />
+          <CallToAction />
+        </Layout>
+      </main>
+    </div>
+  );
 };
 
 export default Home;
