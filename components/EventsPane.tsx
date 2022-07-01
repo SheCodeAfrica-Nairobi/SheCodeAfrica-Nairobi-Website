@@ -1,12 +1,12 @@
-export default function EventsPane() {
-  return (
-    <>
-      <h2 className="font-header text-primary text-3xl sm:text-4xl">Events we have in store for you:</h2>
-      <p className="hidden sm:block mt-2.5 font-light text-2xl">
-        RSVP for ucpoming events to connect with our speakers. Learn from our pasts events on youtube.
-      </p>
-    </>
-  );
+function SectionHeader() {
+	return (
+		<>
+			<h2 className="font-header text-primary text-3xl sm:text-4xl">Events we have in store for you:</h2>
+			<p className="hidden sm:block mt-2.5 font-light text-2xl">
+			RSVP for ucpoming events to connect with our speakers. Learn from our pasts events on youtube.
+			</p>
+		</>
+	)
 }
 
 type EventCardProps = {
