@@ -1,9 +1,5 @@
-import React, { useState } from "react";
-import Head from "next/head";
-import Image from "next/image";
-import { prependOnceListener } from "process";
-import type { NextPage } from "next";
-import { Banner, CallToAction, EventsPane, Layout } from "../components";
+import React from "react";
+import { Banner, Blog, CallToAction, EventsPane, Layout } from "../components";
 
 
 export default function Home() {
@@ -14,6 +10,7 @@ export default function Home() {
           <Banner />
           <CallToAction />
           <EventsPane />
+          <Blog />
         </Layout>
       </main>
     </div>

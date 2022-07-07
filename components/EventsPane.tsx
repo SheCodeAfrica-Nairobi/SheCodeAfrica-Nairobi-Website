@@ -33,12 +33,12 @@ function EventCard({ imageUrl, large = false, className = "" }: EventCardProps):
 
 export default function EventsPane({ className = '' }) {
   return (
-    <div className={`pb-10 ${className}`}>
+    <div className={`${className}`}>
       {/* Mobile & Tablet */}
       <div className="lg:hidden">
         <SectionHeader />
 
-        <div className="mt-4 md:mt-8 grid grid-cols-2 grid-rows-2 gap-y-6 gap-x-4 md:gap-x-8">
+        <div className="mt-4 md:mt-8 grid grid-cols-2 grid-rows-2 gap-y-4 gap-x-4 md:gap-x-8">
           <EventCard imageUrl="/images/event-posters/sample-sca-event-poster-1.png" className="col-span-2" large />
           <EventCard imageUrl="/images/event-posters/sample-sca-event-poster-2.png" />
           <EventCard imageUrl="/images/event-posters/sample-sca-event-poster-3.png" />
