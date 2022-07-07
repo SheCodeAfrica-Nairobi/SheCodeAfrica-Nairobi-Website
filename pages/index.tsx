@@ -5,18 +5,17 @@ import { prependOnceListener } from "process";
 import type { NextPage } from "next";
 import { Banner, CallToAction, EventsPane, Layout } from "../components";
 
-const Home = () => {
-    return(
-      <div>
+
+export default function Home() {
+  return (
+    <div>
       <main className="w-full px-4 md:px-8 lg:px-20 text-darkAccent">
         <Layout>
           <Banner />
-          <EventsPane />
           <CallToAction />
+          <EventsPane />
         </Layout>
       </main>
     </div>
-  );
-};
-
-export default Home;
+  )
+}

@@ -1,4 +1,4 @@
-export default function EventsPane() {
+function SectionHeader() {
   return (
     <>
       <h2 className="font-header text-primary text-3xl sm:text-4xl">Events we have in store for you:</h2>
@@ -18,7 +18,7 @@ type EventCardProps = {
 function EventCard({ imageUrl, large = false, className = "" }: EventCardProps): JSX.Element {
   return (
     <div
-      className={`group relative shadow-md rounded-2xl overflow-hidden aspect-square 
+      className={`group relative shadow-md rounded-2xl overflow-hidden aspect-square
             ${large ? "min-h-[320px] lg:max-h-[480px]" : "min-h-[150px] lg:max-h-[300px]"}
             ${className}`}>
       <a href="#">
@@ -31,7 +31,7 @@ function EventCard({ imageUrl, large = false, className = "" }: EventCardProps):
   );
 }
 
-export default function EventsPane({className = ''}) {
+export default function EventsPane({ className = '' }) {
   return (
     <div className={`pb-10 ${className}`}>
       {/* Mobile & Tablet */}
