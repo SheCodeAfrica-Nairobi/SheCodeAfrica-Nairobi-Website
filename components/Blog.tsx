@@ -35,7 +35,7 @@ const Blog = () => {
           <div className="hidden md:block">
             <ul className="space-y-6">
               <li
-                className="text-2xl hover:text-4xl border-b-2 border-opacity-[98%] border-[#FFF7fc] p-3 flex 
+                className="text-2xl duration-300 ease-out cursor-pointer  border-b-2 border-opacity-[98%] border-[#FFF7fc] p-3 flex 
                         hover:scale-105 justify-between  leading-relaxed items-center tracking-wide"
               >
                 <div>
@@ -47,7 +47,7 @@ const Blog = () => {
                 </div>
               </li>
               <li
-                className="text-2xl hover:text-4xl border-b-2 border-opacity-[98%] border-[#FFF7fc] p-3 flex 
+                className="text-2xl duration-300 ease-out cursor-pointer  border-b-2 border-opacity-[98%] border-[#FFF7fc] p-3 flex 
                         hover:scale-105 justify-between  leading-relaxed items-center tracking-wide"
               >
                 <div>
@@ -59,7 +59,7 @@ const Blog = () => {
                 </div>
               </li>
               <li
-                className="text-2xl hover:text-4xl border-b-2 border-opacity-[98%] border-[#FFF7fc] p-3 flex 
+                className="text-2xl duration-300 ease-out cursor-pointer  border-b-2 border-opacity-[98%] border-[#FFF7fc] p-3 flex 
                         hover:scale-105 justify-between  leading-relaxed items-center tracking-wide"
               >
                 <div>
@@ -71,7 +71,7 @@ const Blog = () => {
                 </div>
               </li>
               <li
-                className="text-2xl hover:text-4xl border-b-2 border-opacity-[98%] border-[#FFF7fc] p-3 flex 
+                className="text-2xl duration-300 ease-out cursor-pointer  border-b-2 border-opacity-[98%] border-[#FFF7fc] p-3 flex 
                         hover:scale-105 justify-between  leading-relaxed items-center tracking-wide"
               >
                 <div>
