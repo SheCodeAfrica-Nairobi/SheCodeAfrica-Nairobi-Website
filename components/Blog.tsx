@@ -13,7 +13,7 @@ const Blog = () => {
             <div className="">
               <div className="hidden relative z-0 h-[354px] bg-primary w-[584px]"></div>
               <div className="bg-[#FFF7FC] bg-opacity-[98%] p-5 rounded-lg space-y-3 md:w-96">
-                <button className="absolute inset-0 z-10 bg-primary text-sm font-light  rounded-full text-white px-3 py-2 text-center">
+                <button className=" bg-primary text-sm font-light  rounded-full text-white px-3 py-2 text-center">
                   #mentalhealth
                 </button>
                 <h1 className="font-semibold text-lg">Religiously Bound</h1>
@@ -35,7 +35,7 @@ const Blog = () => {
           <div className="hidden md:block">
             <ul className="space-y-6">
               <li
-                className="text-2xl hover:text-4xl border-b-2 border-opacity-[98%] border-[#FFF7fc] p-3 flex 
+                className="text-2xl duration-300 ease-out cursor-pointer  border-b-2 border-opacity-[98%] border-[#FFF7fc] p-3 flex 
                         hover:scale-105 justify-between  leading-relaxed items-center tracking-wide"
               >
                 <div>
@@ -47,7 +47,7 @@ const Blog = () => {
                 </div>
               </li>
               <li
-                className="text-2xl hover:text-4xl border-b-2 border-opacity-[98%] border-[#FFF7fc] p-3 flex 
+                className="text-2xl duration-300 ease-out cursor-pointer  border-b-2 border-opacity-[98%] border-[#FFF7fc] p-3 flex 
                         hover:scale-105 justify-between  leading-relaxed items-center tracking-wide"
               >
                 <div>
@@ -59,7 +59,7 @@ const Blog = () => {
                 </div>
               </li>
               <li
-                className="text-2xl hover:text-4xl border-b-2 border-opacity-[98%] border-[#FFF7fc] p-3 flex 
+                className="text-2xl duration-300 ease-out cursor-pointer  border-b-2 border-opacity-[98%] border-[#FFF7fc] p-3 flex 
                         hover:scale-105 justify-between  leading-relaxed items-center tracking-wide"
               >
                 <div>
@@ -71,7 +71,7 @@ const Blog = () => {
                 </div>
               </li>
               <li
-                className="text-2xl hover:text-4xl border-b-2 border-opacity-[98%] border-[#FFF7fc] p-3 flex 
+                className="text-2xl duration-300 ease-out cursor-pointer  border-b-2 border-opacity-[98%] border-[#FFF7fc] p-3 flex 
                         hover:scale-105 justify-between  leading-relaxed items-center tracking-wide"
               >
                 <div>
