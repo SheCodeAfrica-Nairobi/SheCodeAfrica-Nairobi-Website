@@ -7,15 +7,8 @@ import eventbrite from "eventbrite";
 export default function Home() {
   useEffect(() => {
     async function getEvents() {
-      let endpoint = 'https://www.eventbriteapi.com/v3/users/me/events'
-      let config = {
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${process.env.EVENTBRITE_TOKEN}`
-        }
-      }
-      const events = await (await axios.get(endpoint, config)).data
-      console.log(events)
+      const res = await axios.get('/api/events');
+      console.log(res.data);
     }
     getEvents();
   }, [])
