@@ -1,6 +1,6 @@
 import React from "react";
 import { Banner, Blog, CallToAction, EventsPane, Layout } from "../components";
-
+import posts from '../data/articles';
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
           <Banner />
           <CallToAction />
           <EventsPane />
-          <Blog />
+          <Blog posts={posts} />
         </Layout>
       </main>
     </div>
