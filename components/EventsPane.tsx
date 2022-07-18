@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 function SectionHeader() {
   return (
     <>
@@ -13,25 +15,30 @@ type EventCardProps = {
   imageUrl: string;
   large?: boolean;
   className?: string;
+  url?: string;
 };
 
-function EventCard({ imageUrl, large = false, className = "" }: EventCardProps): JSX.Element {
+function EventCard({ imageUrl, large = false, className = "", url }: EventCardProps): JSX.Element {
   return (
     <div
-      className={`group relative shadow-md rounded-2xl overflow-hidden aspect-square
+      className={`group relative selection:shadow-md rounded-2xl overflow-hidden aspect-square
             ${large ? "min-h-[320px] lg:max-h-[480px]" : "min-h-[150px] lg:max-h-[300px]"}
             ${className}`}>
-      <a href="#">
+      <a href={url} target="_blank" >
         <div className="absolute inset-0 flex items-center justify-center opacity-0 bg-primary/80 text-4xl text-gray font-semibold transition-opacity ease-in group-hover:opacity-100">
           RSVP
         </div>
-        <img src={imageUrl} className="object-cover w-full h-full" />
+        <img src={imageUrl} className='object-cover w-full h-full' />
       </a>
     </div>
   );
 }
 
-export default function EventsPane({ className = '' }) {
+export default function EventsPane({ className = '', events }: any) {
+  let latestEvent = events[2]
+  let secondLatestEvent = events[1]
+  let thirdLatestEvent = events[0]
+  console.log(latestEvent, secondLatestEvent, thirdLatestEvent);
   return (
     <div className={`${className}`}>
       {/* Mobile & Tablet */}
@@ -39,25 +46,24 @@ export default function EventsPane({ className = '' }) {
         <SectionHeader />
 
         <div className="mt-4 md:mt-8 grid grid-cols-2 grid-rows-2 gap-y-4 gap-x-4 md:gap-x-8">
-          <EventCard imageUrl="/images/event-posters/sample-sca-event-poster-1.png" className="col-span-2" large />
-          <EventCard imageUrl="/images/event-posters/sample-sca-event-poster-2.png" />
-          <EventCard imageUrl="/images/event-posters/sample-sca-event-poster-3.png" />
+          <EventCard imageUrl={latestEvent?.logo.url} className="col-span-2" large url={latestEvent?.url} />
+          <EventCard imageUrl={secondLatestEvent?.logo.url} url={secondLatestEvent?.url} />
+          <EventCard imageUrl={thirdLatestEvent?.logo.url} url={thirdLatestEvent?.url} />
         </div>
       </div>
 
-      {/* Larger screens */}
       <div className="hidden lg:flex justify-between">
         <div className="flex-1 pr-4">
           <SectionHeader />
 
           <div className="mt-5 flex space-x-8">
-            <EventCard imageUrl="/images/event-posters/sample-sca-event-poster-2.png" />
-            <EventCard imageUrl="/images/event-posters/sample-sca-event-poster-3.png" />
+            <EventCard imageUrl={secondLatestEvent?.logo.url} url={secondLatestEvent?.url} />
+            <EventCard imageUrl={thirdLatestEvent?.logo.url} url={thirdLatestEvent?.url} />
           </div>
         </div>
 
         <div className="w-1/2">
-          <EventCard imageUrl="/images/event-posters/sample-sca-event-poster-1.png" className="xl:mx-auto" large />
+          <EventCard imageUrl={latestEvent?.logo.url} className="xl:mx-auto" large url={latestEvent?.url} />
         </div>
       </div>
     </div>
