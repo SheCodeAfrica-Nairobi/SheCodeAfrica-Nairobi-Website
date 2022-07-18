@@ -9,8 +9,8 @@ export default function Home() {
   useEffect(() => {
     async function getEvents() {
       const res = await axios.get('/api/events');
-      console.log(res.data.slice(-3));
-      setEvents(res.data.slice(-5));
+      console.log(res?.data?.slice(-5));
+      setEvents(res?.data?.slice(-5));
     }
     getEvents();
   }, [])
@@ -21,7 +21,9 @@ export default function Home() {
         <Layout>
           <Banner />
           <CallToAction />
-          <EventsPane events={events} />
+          {events.length !== 0 && (
+            <EventsPane events={events} />
+          )}
           <Blog posts={posts} />
         </Layout>
       </main>
