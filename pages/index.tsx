@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div>
       <main className="w-full px-4 md:px-8 lg:px-20 text-darkAccent">
-        <Layout>
+        <Layout events={events}>
           <Banner />
           <CallToAction />
           {events.length !== 0 && (
