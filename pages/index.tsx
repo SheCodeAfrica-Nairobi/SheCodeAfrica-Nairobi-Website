@@ -1,14 +1,16 @@
 import axios from "axios";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Banner, Blog, CallToAction, EventsPane, Layout } from "../components";
 import posts from '../data/articles';
 import eventbrite from "eventbrite";
 
 export default function Home() {
+  const [events, setEvents] = useState([]);
   useEffect(() => {
     async function getEvents() {
       const res = await axios.get('/api/events');
-      console.log(res.data);
+      console.log(res.data.slice(-3));
+      setEvents(res.data.slice(-5));
     }
     getEvents();
   }, [])
@@ -19,14 +21,10 @@ export default function Home() {
         <Layout>
           <Banner />
           <CallToAction />
-          <EventsPane />
+          <EventsPane events={events} />
           <Blog posts={posts} />
         </Layout>
       </main>
     </div>
   )
-}
-
-export async function getServersideProps() {
-
 }

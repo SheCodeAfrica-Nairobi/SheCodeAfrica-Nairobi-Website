@@ -1,3 +1,4 @@
+
 function SectionHeader() {
   return (
     <>
@@ -31,7 +32,11 @@ function EventCard({ imageUrl, large = false, className = "" }: EventCardProps):
   );
 }
 
-export default function EventsPane({ className = '' }) {
+export default function EventsPane({ className = '', events }: any) {
+  let latestEvent = events[2]
+  let secondLatestEvent = events[1]
+  let thirdLatestEvent = events[0]
+  console.log(latestEvent, secondLatestEvent, thirdLatestEvent);
   return (
     <div className={`${className}`}>
       {/* Mobile & Tablet */}
@@ -39,9 +44,9 @@ export default function EventsPane({ className = '' }) {
         <SectionHeader />
 
         <div className="mt-4 md:mt-8 grid grid-cols-2 grid-rows-2 gap-y-4 gap-x-4 md:gap-x-8">
-          <EventCard imageUrl="/images/event-posters/sample-sca-event-poster-1.png" className="col-span-2" large />
-          <EventCard imageUrl="/images/event-posters/sample-sca-event-poster-2.png" />
-          <EventCard imageUrl="/images/event-posters/sample-sca-event-poster-3.png" />
+          <EventCard imageUrl={latestEvent?.logo.url} className="col-span-2" large />
+          <EventCard imageUrl={secondLatestEvent?.logo.url} />
+          <EventCard imageUrl={thirdLatestEvent?.logo.url} />
         </div>
       </div>
 
@@ -51,13 +56,13 @@ export default function EventsPane({ className = '' }) {
           <SectionHeader />
 
           <div className="mt-5 flex space-x-8">
-            <EventCard imageUrl="/images/event-posters/sample-sca-event-poster-2.png" />
-            <EventCard imageUrl="/images/event-posters/sample-sca-event-poster-3.png" />
+            <EventCard imageUrl={secondLatestEvent?.logo.url} />
+            <EventCard imageUrl={thirdLatestEvent?.logo.url} />
           </div>
         </div>
 
         <div className="w-1/2">
-          <EventCard imageUrl="/images/event-posters/sample-sca-event-poster-1.png" className="xl:mx-auto" large />
+          <EventCard imageUrl={latestEvent?.logo.url} className="xl:mx-auto" large />
         </div>
       </div>
     </div>
