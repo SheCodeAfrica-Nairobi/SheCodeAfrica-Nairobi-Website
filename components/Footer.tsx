@@ -1,4 +1,4 @@
-type PropsWithClassName<T = {}> = { className?: string } & T
+type PropsWithClassName<T = {}> = { className?: string, events: any } & T
 
 const footerMenuItems = [
     {
@@ -29,14 +29,14 @@ const eventItems = [
     },
 ]
 
-function Footer({ className }: PropsWithClassName) {
+function Footer({ className, events }: PropsWithClassName) {
     return (
         <footer className={`py-4 md:pt-8 ${className}`}>
             <div className="md:flex md:justify-between">
                 <div className="mb-6 md:mb-0">
                     <div>
                         <p className="pt-3">Our Partners</p>
-                        <div className="flex flex-row pt-3 gap-5">
+                        <div className="flex flex-row gap-5 pt-3">
                             <a href="#" className="">
                                 <img src="/images/21cskills_colored 2.png" className="" alt="FlowBite Logo" />
                             </a>
@@ -47,7 +47,7 @@ function Footer({ className }: PropsWithClassName) {
                     </div>
                     <div>
                         <p className="pt-3">Our Socials</p>
-                        <div className="flex flex-row pt-3 gap-5">
+                        <div className="flex flex-row gap-5 pt-3">
                             <a href="#" className="">
                                 <img src="/images/logos_twitter.png" className="" alt="Twitter" />
                             </a>
@@ -65,20 +65,20 @@ function Footer({ className }: PropsWithClassName) {
                     {footerMenuItems.map((item) => (
                         <a key={item.name}
                             href={item.href}
-                            className="pt-3 flex items-center rounded-md"
+                            className="flex items-center pt-3 rounded-md"
                         >
                             <span className="md:ml-3">{item.name}</span>
                         </a>
                     ))}
                 </div>
                 <div className="mb-6 md:mb-0">
-                    <p className="md:ml-3 pt-3">Explore our Events</p>
-                    {eventItems.map((item) => (
-                        <a key={item.name}
-                            href={item.href}
-                            className="pt-3 flex items-center rounded-md"
+                    <p className="pt-3 md:ml-3">Explore our Events</p>
+                    {events.slice(0, 3).map((event: any) => (
+                        <a key={event.id}
+                            href={event.url}
+                            className="flex items-center pt-3 rounded-md"
                         >
-                            <span className="md:ml-3 font-light">{item.name}</span>
+                            <span className="font-light md:ml-3">{event.name?.text}</span>
                         </a>
                     ))}
                 </div>
