@@ -3,15 +3,16 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 
 type LayoutType = {
-    children: ReactNode
+    children: ReactNode,
+    events: any
 }
 
-const Layout = ({ children }: LayoutType) => {
+const Layout = ({ children, events }: LayoutType) => {
   return (
     <>
       <Nav />
       <main>{children}</main>
-      <Footer />
+      <Footer events={events} />
     </>
   );
 };
