@@ -1,4 +1,9 @@
-type PropsWithClassName<T = {}> = { className?: string, events: any } & T
+import { Event } from "../typings";
+
+interface footerProps {
+    className?: string,
+    events: Event[] 
+}
 
 const footerMenuItems = [
     {
@@ -14,22 +19,8 @@ const footerMenuItems = [
         href: '/blog',
     },
 ]
-const eventItems = [
-    {
-        name: 'Architecting software',
-        href: '#',
-    },
-    {
-        name: 'Imposter syndrome in a Techie',
-        href: '#',
-    },
-    {
-        name: 'Supporting women in their growth',
-        href: '#',
-    },
-]
 
-function Footer({ className, events }: PropsWithClassName) {
+function Footer({ className, events }: footerProps ) {
     return (
         <footer className={`py-4 md:pt-8 ${className}`}>
             <div className="md:flex md:justify-between">
@@ -65,7 +56,7 @@ function Footer({ className, events }: PropsWithClassName) {
                     {footerMenuItems.map((item) => (
                         <a key={item.name}
                             href={item.href}
-                            className="flex items-center pt-3 rounded-md"
+                            className="flex items-center pt-3 rounded-md hover:text-pink-800"
                         >
                             <span className="md:ml-3">{item.name}</span>
                         </a>
@@ -76,7 +67,7 @@ function Footer({ className, events }: PropsWithClassName) {
                     {events.slice(0, 3).map((event: any) => (
                         <a key={event.id}
                             href={event.url}
-                            className="flex items-center pt-3 rounded-md"
+                            className="flex items-center pt-3 rounded-md hover:text-pink-800"
                         >
                             <span className="font-light md:ml-3">{event.name?.text}</span>
                         </a>
