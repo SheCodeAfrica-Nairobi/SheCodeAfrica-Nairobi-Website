@@ -52,7 +52,8 @@ export default function EventsPane({ className = '', events }: EventsPaneProps) 
       <div className="lg:hidden">
         <SectionHeader />
 
-        <div className="grid grid-cols-2 grid-rows-2 mt-4 md:mt-8 gap-y-4 gap-x-4 md:gap-x-8">
+
+        <div className="mt-4 md:mt-8 grid grid-cols-2 grid-rows-[1fr_auto] gap-y-4 gap-x-4 md:gap-x-8">
           <EventCard imageUrl={latestEvent?.logo.url} className="col-span-2" large url={latestEvent?.url} />
           <EventCard imageUrl={secondLatestEvent?.logo.url} url={secondLatestEvent?.url} />
           <EventCard imageUrl={thirdLatestEvent?.logo.url} url={thirdLatestEvent?.url} />

@@ -14,6 +14,7 @@
     "next": "latest",
     "react": "18.1.0",
     "react-dom": "18.1.0",
+    "typed.js": "^2.0.12",
     "react-icons": "^4.4.0"
   },
   "devDependencies": {
