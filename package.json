@@ -6,10 +6,16 @@
     "start": "next start"
   },
   "dependencies": {
+    "@apollo/client": "^3.6.9",
+    "@headlessui/react": "^1.6.5",
+    "axios": "^0.27.2",
+    "eventbrite": "^1.3.0",
+    "graphql": "^16.5.0",
     "next": "latest",
     "react": "18.1.0",
     "react-dom": "18.1.0",
-    "typed.js": "^2.0.12"
+    "typed.js": "^2.0.12",
+    "react-icons": "^4.4.0"
   },
   "devDependencies": {
     "@types/node": "17.0.35",
