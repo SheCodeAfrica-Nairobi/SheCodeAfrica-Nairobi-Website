@@ -1,4 +1,3 @@
-import Banner from "../components/Banner";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Banner, Blog, CallToAction, EventsPane, Layout } from "../components";
