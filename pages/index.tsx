@@ -2,9 +2,12 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Banner, Blog, CallToAction, EventsPane, Layout } from "../components";
 import posts from '../data/articles';
+import eventbrite from "eventbrite";
+import { Event } from "../typings"
+
 
 export default function Home() {
-  const [events, setEvents] = useState([]);
+  const [events, setEvents] = useState<Event[]>([]);
   useEffect(() => {
     async function getEvents() {
       const res = await axios.get('/api/events');
