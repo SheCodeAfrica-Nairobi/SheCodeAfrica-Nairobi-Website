@@ -23,10 +23,7 @@ const LandingValueProposition = (props: Props) => {
       backSpeed: props.backSpeed || 100,
     };
     typed.current = new Typed(elem.current!, options);
-    let animationTimeout = setInterval(
-      () => typed.current?.reset(),
-      props.delay * 1000
-    );
+    let animationTimeout = setInterval(() => typed.current?.reset(), props.delay * 1000);
     return () => {
       typed.current!.destroy();
       clearInterval(animationTimeout);
@@ -34,12 +31,9 @@ const LandingValueProposition = (props: Props) => {
   }, []);
   return (
     <div
-      className={`${index == 0 && "text-primary"} ${
-        index == 1 && "text-greenAccent"
-      } ${
+      className={`${index == 0 && "text-primary"} ${index == 1 && "text-greenAccent"} ${
         index == 2 && "text-blueAccent"
-      } font-header  text-primary text-6xl font-bold lg:text-8xl`}
-    >
+      } font-header  text-6xl font-bold text-primary lg:text-8xl`}>
       <span ref={elem} />
     </div>
   );
