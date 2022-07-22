@@ -1,4 +1,5 @@
-import React, { useRef, useEffect, useState } from "react";
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
+import { useRef, useEffect, useState } from "react";
 import Typed, { TypedOptions } from "typed.js";
 
 type Props = {
@@ -18,15 +19,12 @@ const LandingValueProposition = (props: Props) => {
   useEffect(() => {
     const options: TypedOptions = {
       strings: [...props.elems],
-      preStringTyped: (i, _) => setIndex(i),
+      preStringTyped: (i) => setIndex(i),
       typeSpeed: props.typeSpeed || 100,
       backSpeed: props.backSpeed || 100,
     };
     typed.current = new Typed(elem.current!, options);
-    let animationTimeout = setInterval(
-      () => typed.current?.reset(),
-      props.delay * 1000
-    );
+    const animationTimeout = setInterval(() => typed.current?.reset(), props.delay * 1000);
     return () => {
       typed.current!.destroy();
       clearInterval(animationTimeout);
@@ -34,12 +32,9 @@ const LandingValueProposition = (props: Props) => {
   }, []);
   return (
     <div
-      className={`${index == 0 && "text-primary"} ${
-        index == 1 && "text-greenAccent"
-      } ${
+      className={`${index == 0 && "text-primary"} ${index == 1 && "text-greenAccent"} ${
         index == 2 && "text-blueAccent"
-      } font-header  text-primary text-6xl font-bold lg:text-8xl`}
-    >
+      } font-header  text-6xl font-bold text-primary lg:text-8xl`}>
       <span ref={elem} />
     </div>
   );

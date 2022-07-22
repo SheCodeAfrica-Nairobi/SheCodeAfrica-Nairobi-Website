@@ -78,3 +78,10 @@ export interface Event {
         edge_color_set?: boolean
     }
 }
+
+export interface Post {
+    id: number,
+    image: string,
+    title: string,
+    url: string,
+};
