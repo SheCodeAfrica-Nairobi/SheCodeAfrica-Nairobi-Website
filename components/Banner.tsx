@@ -1,7 +1,7 @@
 import CtaButton from "./CtaButton";
 import LandingValueProposition from "./LandingValueProposition";
 
-type PropsWithClassName<T = {}> = { className?: string } & T;
+type PropsWithClassName<T = Record<string, unknown>> = { className?: string } & T;
 
 function BannerImage({ className, ...props }: PropsWithClassName<{ src: string; alt: string }>) {
   return <img className={`rounded-[50px] border-[10px] border-zinc-50 ${className}`} {...props} />;

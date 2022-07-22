@@ -17,7 +17,7 @@ export default function Nav() {
     { name: "Be a partner", href: "/be-a-partner" },
     { name: "Be a member", href: "/be-a-member" },
   ];
-  function classNames(...classes: any[]) {
+  function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(" ");
   }
 
@@ -32,7 +32,7 @@ export default function Nav() {
             }
           `}</style>
           <div className="relative z-50 w-full flex-none text-sm font-semibold leading-6 text-slate-900">
-            <div className="max-w-container lg:px-8s mx-auto px-4 sm:px-6">
+            <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
               <div className="insent-y-0 absolute right-0 sm:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="my-1 inline-flex p-3">

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Event } from "../typings";
 
 function SectionHeader() {
@@ -30,7 +29,7 @@ function EventCard({ imageUrl, large = false, className = "", url }: EventCardPr
       className={`group relative aspect-square overflow-hidden rounded-2xl selection:shadow-md
             ${large ? "min-h-[320px] lg:max-h-[480px]" : "min-h-[150px] lg:max-h-[300px]"}
             ${className}`}>
-      <a href={url} target="_blank">
+      <a href={url} target="_blank" rel="noreferrer">
         <div className="absolute inset-0 flex items-center justify-center bg-primary/80 text-4xl font-semibold text-gray opacity-0 transition-opacity ease-in group-hover:opacity-100">
           RSVP
         </div>
@@ -41,9 +40,9 @@ function EventCard({ imageUrl, large = false, className = "", url }: EventCardPr
 }
 
 export default function EventsPane({ className = "", events }: EventsPaneProps) {
-  let latestEvent = events[2];
-  let secondLatestEvent = events[1];
-  let thirdLatestEvent = events[0];
+  const latestEvent = events[2];
+  const secondLatestEvent = events[1];
+  const thirdLatestEvent = events[0];
   console.log(latestEvent, secondLatestEvent, thirdLatestEvent);
   return (
     <div className={`${className}`}>

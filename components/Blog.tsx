@@ -1,7 +1,12 @@
 import Link from "next/link";
-import React from "react";
 import { BsArrowUpRightSquareFill } from "react-icons/bs";
-const Blog = ({ posts }: any) => {
+import { Post } from "../typings";
+
+type BlogProps = {
+  posts: Post[]
+};
+
+const Blog = ({ posts }: BlogProps) => {
   return (
     <div className="items-center justify-center space-y-5 md:flex md:p-10">
       <div className="space-y-5">
@@ -18,7 +23,7 @@ const Blog = ({ posts }: any) => {
                 <p className="text-base font-light leading-relaxed"></p>
                 <div className="flex items-center justify-between">
                   <h2 className="italic">By Essy</h2>
-                  <a href={posts[0].url} target="_blank">
+                  <a href={posts[0].url} target="_blank" rel="noreferrer">
                     {" "}
                     <BsArrowUpRightSquareFill className=" h-8 w-8 rounded-full text-primary" />
                   </a>
@@ -32,13 +37,13 @@ const Blog = ({ posts }: any) => {
           </div>
           <div className="hidden md:block">
             <ul className="space-y-6">
-              {posts.map((post: any) => (
+              {posts.map((post: Post) => (
                 <li
                   key={post.id}
                   className="flex cursor-pointer items-center justify-between  border-b-2 border-[#FFF7fc] border-opacity-[98%] p-3 text-2xl
                         leading-relaxed tracking-wide  duration-300 ease-out hover:scale-105">
                   <div>
-                    <a href={post.url} target="_blank">
+                    <a href={post.url} target="_blank" rel="noreferrer">
                       {" "}
                       {post.title}
                     </a>

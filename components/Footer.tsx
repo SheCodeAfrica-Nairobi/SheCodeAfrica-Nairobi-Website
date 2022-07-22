@@ -60,7 +60,7 @@ function Footer({ className, events }: footerProps) {
         </div>
         <div className="mb-6 md:mb-0">
           <p className="pt-3 md:ml-3">Explore our Events</p>
-          {events.slice(0, 3).map((event: any) => (
+          {events.slice(0, 3).map((event: Event) => (
             <a key={event.id} href={event.url} className="flex items-center rounded-md pt-3 hover:text-pink-800">
               <span className="font-light md:ml-3">{event.name?.text}</span>
             </a>

@@ -1,8 +1,7 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Banner, Blog, CallToAction, EventsPane, Layout } from "../components";
 import posts from "../data/articles";
-import eventbrite from "eventbrite";
 import { Event } from "../typings";
 
 export default function Home() {

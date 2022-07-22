@@ -37,7 +37,13 @@ const item_contents = [
   ],
 ];
 
-const Item = ({ h3text, ptext, Icon }: any) => {
+type ItemProps = {
+  Icon: React.FC,
+  h3text: string,
+  ptext: string,
+};
+
+const Item = ({ h3text, ptext, Icon }: ItemProps) => {
   return (
     <div className="flex flex-col items-center space-y-4 text-darkAccent md:items-start">
       <Icon className="h-16 w-16 text-primary" />

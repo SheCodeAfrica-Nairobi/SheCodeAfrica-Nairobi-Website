@@ -1,10 +1,11 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import Nav from "./Nav";
 import Footer from "./Footer";
+import { Event }  from '../typings';
 
 type LayoutType = {
   children: ReactNode;
-  events: any;
+  events: Event[];
 };
 
 const Layout = ({ children, events }: LayoutType) => {
