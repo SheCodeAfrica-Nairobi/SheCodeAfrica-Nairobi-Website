@@ -24,11 +24,15 @@ function EventCard({ imageUrl, large = false, className = "", url }: EventCardPr
       className={`group relative selection:shadow-md rounded-2xl overflow-hidden aspect-square
             ${large ? "min-h-[320px] lg:max-h-[480px]" : "min-h-[150px] lg:max-h-[300px]"}
             ${className}`}>
-      <a href={url} target="_blank" >
-        <div className="absolute inset-0 flex items-center justify-center opacity-0 bg-primary/80 text-4xl text-gray font-semibold transition-opacity ease-in group-hover:opacity-100">
-          RSVP
-        </div>
-        <img src={imageUrl} className='object-cover w-full h-full' />
+      <Image
+        src={imageUrl}
+        layout="fill"
+        objectFit="cover"
+        sizes={large ? "480px" : "300px"}
+      />
+
+      <a href={url} target="_blank" className="absolute inset-0 flex items-center justify-center opacity-0 bg-primary/80 text-4xl text-gray font-semibold transition-opacity ease-in group-hover:opacity-100">
+        RSVP
       </a>
     </div>
   );
@@ -46,9 +50,9 @@ export default function EventsPane({ className = '', events }: any) {
         <SectionHeader />
 
         <div className="mt-4 md:mt-8 grid grid-cols-2 grid-rows-2 gap-y-4 gap-x-4 md:gap-x-8">
-          <EventCard imageUrl={latestEvent?.logo.url} className="col-span-2" large url={latestEvent?.url} />
-          <EventCard imageUrl={secondLatestEvent?.logo.url} url={secondLatestEvent?.url} />
-          <EventCard imageUrl={thirdLatestEvent?.logo.url} url={thirdLatestEvent?.url} />
+          <EventCard imageUrl={latestEvent?.logo.original.url} className="col-span-2" large url={latestEvent?.url} />
+          <EventCard imageUrl={secondLatestEvent?.logo.original.url} url={secondLatestEvent?.url} />
+          <EventCard imageUrl={thirdLatestEvent?.logo.original.url} url={thirdLatestEvent?.url} />
         </div>
       </div>
 
@@ -57,13 +61,13 @@ export default function EventsPane({ className = '', events }: any) {
           <SectionHeader />
 
           <div className="mt-5 flex space-x-8">
-            <EventCard imageUrl={secondLatestEvent?.logo.url} url={secondLatestEvent?.url} />
-            <EventCard imageUrl={thirdLatestEvent?.logo.url} url={thirdLatestEvent?.url} />
+            <EventCard imageUrl={secondLatestEvent?.logo.original.url} url={secondLatestEvent?.url} className="flex-1" />
+            <EventCard imageUrl={thirdLatestEvent?.logo.original.url} url={thirdLatestEvent?.url} className="flex-1" />
           </div>
         </div>
 
         <div className="w-1/2">
-          <EventCard imageUrl={latestEvent?.logo.url} className="xl:mx-auto" large url={latestEvent?.url} />
+          <EventCard imageUrl={latestEvent?.logo.original.url} className="xl:mx-auto" large url={latestEvent?.url} />
         </div>
       </div>
     </div>
